@@ -4,10 +4,6 @@
 
 export const environment = {
   production: false,
-  apiUrl: '/api/v2/user',
-  ownerId: '603c3a188703155bbc32e337',
-  ownerName: 'Sergei',
-  siteUrl: 'http://localhost:4200'
 };
 
 /*
