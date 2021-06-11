@@ -1,10 +1,10 @@
 # VisionAIO
 
-This project is **landing for dashboard of CactusDashboard** of [VisionAIO](https://vk.com/visionio). 
-Landing link: [https://visionaio.com](https://visionaio.com)
-Dashboard link: [https://dash.visionaio.com](https://dash.visionaio.com)
+This project is landing for dashboard of CactusDashboard of [VisionAIO](https://vk.com/visionio). <br />
+Landing link: [https://visionaio.com](https://visionaio.com) <br />
+Dashboard link: [https://dash.visionaio.com](https://dash.visionaio.com) <br /> <br />
 
-***Copyright belongs to [CactusWeb](https://manager.cactusweb.io).***
+***Copyright belongs to [CactusWeb](https://manager.cactusweb.io).*** <br />
 ***Exclusive use rights belong to [VisionAIO](https://visionaio.com).***
 
 ## Development
