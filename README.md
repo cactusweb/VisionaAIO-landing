@@ -1,6 +1,15 @@
 # VisionAIO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1.
+This project is **landing for dashboard of CactusDashboard** of [VisionAIO](https://vk.com/visionio). 
+Landing link: [https://visionaio.com](https://visionaio.com)
+Dashboard link: [https://dash.visionaio.com](https://dash.visionaio.com)
+
+***Copyright belongs to [CactusWeb](https://manager.cactusweb.io).***
+***Exclusive use rights belong to [VisionAIO](https://visionaio.com).***
+
+## Development
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1. 
 
 ## Development server
 
