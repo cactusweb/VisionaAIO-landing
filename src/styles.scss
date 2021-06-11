@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+$primary-color: #BE82C9;
+$primary-hover: #9E4DAD;
+$danger-color: #E56363;
+$tab-size: 780px;
+
+
+.primary-bg{
+    background-color: $primary-color;
+    &:hover:not( :disabled ){
+        background-color: $primary-hover;
+    }
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height:100vh;
+    display: grid;
+}
+
+*{
+    color: #F5F5F5; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+app-root{
+    display: grid;
+}
+app-root > *{
+    display: grid;
+}
+
+*{
+    outline: none;
+}
+
+
+div, section, header, main, footer, nav, form{
+    box-sizing: border-box;
+}
+
+a, button{
+    cursor: pointer;
+    box-sizing: border-box;
+    &:disabled{
+        cursor: default;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #F5F5F5; 
+}
+
+button{
+    background: none;
+    color: #F5F5F5; 
+    border: 1px solid #F5F5F5;
+}
+
+ul, li, p, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+@media screen and ( max-width: 780px ){
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+h3{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 24px;
+}
+
+
+
+section{
+    display: grid;
+    row-gap: 60px;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    position: relative;
+}
+@media screen and ( max-width: 780px ){
+    section{
+        row-gap: 30px;
+    }
+}
+
+span.anchor{
+    position: absolute;
+    top: -10%;
+}
+
+app-root > *{
+    display: grid;
+    background: linear-gradient(99.49deg, #5F34A0 4.35%, #31227D 94.8%);
+}
+
+router-outlet{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;;
+}
+
+
+
+/* ngx-spinner > div {
+    background: linear-gradient(99.49deg, #5F34A0 4.35%, #31227D 94.8%) !important;
+    backdrop-filter: blur(2px) opacity(20%) !important;
+} */
+
+ngx-spinner > div{ 
+    border-radius: inherit; 
+    backdrop-filter: blur(2px); 
+    background-color: rgba(68, 42, 140, 0.8) !important;
+}
+
+ngx-spinner *{ color: white !important; }
+
+
+
+app-purchase-status ngx-spinner{
+    border-radius: inherit;
+    > div{
+        background: none !important;
+        backdrop-filter: none;
+        > div > div{
+            border-width: 3px !important;
+        }
+    }
+
+    * { color: #000 !important; }
+    p{
+        font-size: 18px;
+        font-weight: 600;
+        white-space: pre;
+        @media screen and ( max-width: $tab-size ) {
+            margin-top: 20px;
+        }
+    }
+
+} 
+
+
+
+app-dashboard{
+    grid-template-rows: 1fr auto;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+    width:5px;
+    height: 5px;
+}
+  
+::-webkit-scrollbar-thumb{
+    border: none;
+    border-radius: 20px;
+    // background: linear-gradient(348.34deg, #9E4DAD 17.95%, #BE82C9 38.83%, #5F2EBE 56.92%, #5222A9 80%);
+    background: linear-gradient( 0deg ,#7a01ff,#e967ff,#69ecf3);
+}
+  
+::-webkit-scrollbar-thumb:hover{
+    // background: linear-gradient(348.34deg, #9E4DAD 17.95%, #BE82C9 38.83%, #5F2EBE 56.92%, #5222A9 80%);
+    background: linear-gradient( 0deg ,#7a01ff,#e967ff,#69ecf3);
+}
+  
+::-webkit-scrollbar-track{
+    border-width:0;
+    background: #191f33;
+}
+
+
+  
+.standart-inp{
+    height: 44px;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    color: #000;
+    width: auto;
+    box-sizing: border-box;
+    min-width: 0px;
+    
+    &::placeholder{
+        color: #808080;
+    }
+
+    @media screen and ( max-width: $tab-size ) {
+        height: 40px;
+    }
+    
+    // &.ng-touched.ng-invalid{
+    //     border: 1px solid $danger-color;
+    // }
+}
+
+
+button{
+    > ngx-spinner div{
+
+        background: none !important;
+        backdrop-filter: unset !important;
+
+        > div {
+            width: 22px !important;
+            height: 22px !important;
+
+            > div{
+                border-width: 3px !important;
+                width: inherit !important;
+                height: inherit !important;
+            }
+        }
+
+    }
+}
+
+
+.standart-btn{
+    border-radius: 20px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .3s ;
+    position: relative;
+    border: none;
+    min-width: 0px;
+    @extend .primary-bg;
+    @media screen and ( max-width: $tab-size ) {
+        height: 50px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+}
+
+.window{
+    padding: 40px 90px;
+    display: grid;
+    row-gap: 10px;
+    width: 500px;
+    border-radius: 20px;
+
+    background: #ffffff;
+    position: relative;
+    
+    @media screen and ( max-width: $tab-size ) {
+        max-width: 335px;
+        padding: 20px 35px; 
+        border-radius: 10px;
+    }
+
+    .error{
+        min-width: 130px;
+        height: 30px;
+        background-color: $danger-color;
+        border-radius: 10px 10px 0px 0px;
+        display: grid;
+        place-items: center;
+        font-size: 14px;
+        font-weight: 600px;
+        color: #FFF;
+        padding: 0px 20px;
+        white-space: pre;
+
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%) scale(1,0);
+        transform-origin: bottom;
+        transition: .3s;
+
+        &.show{
+            transform: translate(-50%, 0%) scale(1,1);
+            transition: 0;
+       }
+    }
+
+    .standart-btn{
+        height: 50px;
+        border-radius: 10px;
+    }
+}
+

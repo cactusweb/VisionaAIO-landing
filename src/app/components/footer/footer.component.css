@@ -1,0 +1,162 @@
+svg path, svg{
+    transition: .4s;
+}
+
+
+
+
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 18px;
+    line-height: 22px;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+}
+
+p a{
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 40px;
+
+}
+
+footer > div:first-child{
+    justify-self: start;
+}
+
+footer > div:last-child{
+    justify-self: end;
+    justify-items: end;
+    align-self: start;
+}
+
+footer > div{
+    display: grid;
+    row-gap: 35px;
+}
+
+footer > div > *{
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+
+
+a.user-agreement{
+    color: #A0A0A0;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .3s;
+}
+
+a.user-agreement:hover{
+    color: #fff;
+}
+
+
+
+
+
+.social{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 40px;
+    align-content: center;
+    justify-self: start;
+}
+
+.social a{
+    display: grid;
+    align-content: center;
+}
+
+.social a:last-child{
+    justify-self: end;
+}
+.social a:first-child{
+    justify-self: start;
+}
+
+.social a:hover svg path{
+    fill: #BE82C9;
+}
+
+.social img{
+    height: max-content;
+}
+
+
+
+.toMain{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 8px;
+}
+
+
+.circle{
+    display: grid;
+    place-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 2px solid #F5F5F5;
+    transition: .4s;
+}
+
+.toMain:hover .circle{
+    background-color: #F5F5F5;
+}
+
+.toMain:hover .circle svg path{
+    fill: #32237E
+}
+
+
+
+@media screen and ( max-width: 780px ){
+    
+    footer{
+        grid-auto-flow: row;
+        row-gap: 80px;
+    }
+
+    footer > div{
+        justify-self: center !important;
+        row-gap: 40px;
+    }
+    
+    footer h3{
+        text-align: center;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+    
+    a.user-agreement{
+        font-size: 14px;
+    }
+
+    .social{
+        column-gap: 40px;
+        justify-self: stretch;
+    }
+
+    
+    .toMain{
+        display: none !important;
+    }
+}

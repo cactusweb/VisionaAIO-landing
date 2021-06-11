@@ -1,0 +1,25 @@
+
+<main>
+    <section class="main">
+        <app-navbar [isMain]="true"></app-navbar>
+        <app-main-block></app-main-block>
+    </section>
+    <app-support-sites-block class=""></app-support-sites-block>
+    <app-partners-block class=""></app-partners-block>
+    <app-faq-block class=""></app-faq-block>
+    <!-- <div></div> -->
+</main>
+<app-footer></app-footer>
+
+
+<ngx-spinner
+type="none"
+size="small"
+zIndex='1000000'
+[fullScreen]="true"
+>
+<div class="loading">
+    <img src="/assets/img/logo/logo.webp" alt="VisionAIO">
+    <p>Loading...</p>
+</div>
+</ngx-spinner>

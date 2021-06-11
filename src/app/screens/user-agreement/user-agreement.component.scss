@@ -1,0 +1,25 @@
+$tab-size: 780px;
+
+.agreement{
+    padding: 30px 60px;
+    @media screen and ( max-width: $tab-size ) {
+        padding: 20px;
+    }
+
+    *{
+        color: white !important;
+    }
+}
+
+.page{
+    display: grid;
+    row-gap: 20px;
+}
+
+footer{
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 20px 0px;
+    justify-items: center;
+}
