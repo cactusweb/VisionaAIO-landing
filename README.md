@@ -4,7 +4,7 @@ This project is landing for dashboard of CactusDashboard of [VisionAIO](https://
 Landing url: [https://visionaio.com](https://visionaio.com) <br />
 Dashboard url: [https://dash.visionaio.com](https://dash.visionaio.com) <br /> <br />
 
-***Copyright belongs to [CactusWeb](https://manager.cactusweb.io).*** <br />
+***Copyright belongs to [CactusWeb](https://vk.com/cactus_web).*** <br />
 ***Exclusive use rights belong to [VisionAIO](https://visionaio.com).***
 
 ## Development
