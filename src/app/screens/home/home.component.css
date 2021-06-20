@@ -4,7 +4,7 @@ main{
     row-gap: 4%;
 
     padding: 30px 80px 0px;
-    min-height: 400vh;
+    min-height: 300vh;
 
     /* transition: .4s; */
 }
